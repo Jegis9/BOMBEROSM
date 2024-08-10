@@ -1,0 +1,236 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div
+  id="carouselExampleInterval"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img
+        src="{% static 'img/equipo.jpeg' %}"
+        class="d-block w-100 carousel-image"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img
+        src="{% static 'img/entrenamiento.jpg' %}"
+        class="d-block w-100 carousel-image"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img
+        src="{% static 'img/equipo2.jpg' %}"
+        class="d-block w-100 carousel-image"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img
+        src="{% static 'img/ambulancia.jpg' %}"
+        class="d-block w-100 carousel-image"
+        alt="..."
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleInterval"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleInterval"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-center border-bottom border-success">Preguntas frecuentes</h2>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne"
+          aria-expanded="false"
+          aria-controls="flush-collapseOne"
+        >
+          Accordion Item #1
+        </button>
+      </h2>
+      <div
+        id="flush-collapseOne"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the first
+          item's accordion body.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo"
+          aria-expanded="false"
+          aria-controls="flush-collapseTwo"
+        >
+          Accordion Item #2
+        </button>
+      </h2>
+      <div
+        id="flush-collapseTwo"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the
+          second item's accordion body. Let's imagine this being filled with
+          some actual content.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree"
+          aria-expanded="false"
+          aria-controls="flush-collapseThree"
+        >
+          Accordion Item #3
+        </button>
+      </h2>
+      <div
+        id="flush-collapseThree"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the third
+          item's accordion body. Nothing more exciting happening here in terms
+          of content, but just filling up the space to make it look, at least at
+          first glance, a bit more representative of how this would look in a
+          real-world application.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-center border-bottom border-success">Servicios</h2>
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="m-3" style="width: 18rem">
+      <div class="d-flex justify-content-center mt-3">
+        <img src="{% static 'svg/fire.svg' %}" class="img-circle" alt="..." />
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="m-3" style="width: 18rem">
+      <div class="d-flex justify-content-center mt-3">
+        <img
+          src="{% static 'svg/carCrash.svg' %}"
+          class="img-circle"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="m-3" style="width: 18rem">
+      <div class="d-flex justify-content-center mt-3">
+        <img
+          src="{% static 'svg/ambulance.svg' %}"
+          class="img-circle"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+
+    <div class="m-3" style="width: 18rem">
+      <div class="d-flex justify-content-center mt-3">
+        <img src="{% static 'svg/pet.svg' %}" class="img-circle" alt="..." />
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+
+    <div class="m-3" style="width: 18rem">
+      <div class="d-flex justify-content-center mt-3">
+        <img src="{% static 'svg/toxic.svg' %}" class="img-circle" alt="..." />
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="text-center border-bottom border-success">Nuestra ubicacion</h2>
+
+  <div class="container mt-5">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="m-3" style="width: 18rem">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.4621375277084!2d-91.365514523937!3d14.911324569391862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858eaf7aa47ef8bf%3A0xafaef86e580f6cd3!2sBomberos%20Municipales%20Totonicap%C3%A1n!5e0!3m2!1ses-419!2sgt!4v1721800137560!5m2!1ses-419!2sgt"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="m-3" style="width: 18rem">
+        <div class="card">hola</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
