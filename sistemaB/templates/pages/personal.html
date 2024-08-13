@@ -1,86 +1,67 @@
 {% extends 'navBar.html' %} {% load static %} {% block contentDash %}
-<div class="content-container">
-  <div class="container mt-5">
-    <div class="container sticky-section">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
       <h1 class="text-center">Titulo</h1>
-      <div class="container"></div>
-
-      <div class="container">
-        <!-- Botón para abrir el modal -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Nuevo categoria
-          <img src="{% static 'svg/plus.svg' %}" class="svgButtons" />
-        </button>
-
-        <!-- Button trigger modal -->
-
-        <button
-          type="button"
-          class="btn btn-danger botonModal"
-          data-toggle="modal"
-          data-target="#miModal"
-        >
-          Descarga PDF
-          <img src="{% static 'svg/pdf.svg' %}" class="svgButtons" />
-        </button>
-        <button
-          type="button"
-          class="btn btn-success botonModal"
-          data-toggle="modal"
-          data-target="#miModal"
-        >
-          Descarga Excel
-          <img src="{% static 'svg/excel.svg' %}" class="svgButtons" />
-        </button>
-      </div>
     </div>
-
-    <div class="container">
-      <div class="table-container">
-        <h2 class="text-center">Lista</h2>
-        <table id="myTable" class="display table">
-          <thead>
-            <tr>
-              <th class="header-cell">Column 1</th>
-              <th class="header-cell">Column 2</th>
-              <th class="header-cell">Column 2</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Row 1 Data 1</td>
-              <td>Row 1 Data 2</td>
-              <td>Row 1 Data 2</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <button class="btn btn-danger">
-                  <img
-                    src="{% static 'svg/update.svg' %}"
-                    alt=""
-                    class="svgButtons"
-                  />
-                </button>
-                <button class="btn btn-warning">
-                  <img
-                    src="{% static 'svg/delete.svg' %}"
-                    alt=""
-                    class="svgButtons"
-                  />
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="col-12 d-flex flex-column align-items-center">
+      <button
+        type="button"
+        class="btn btn-primary mb-2 rounded-pill"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Nuevo categoria
+        <img src="{% static 'svg/plus.svg' %}" class="svgButtons" />
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger mb-2 rounded-pill"
+        data-bs-toggle="modal"
+        data-bs-target="#miModal"
+      >
+        Descarga PDF
+        <img src="{% static 'svg/pdf.svg' %}" class="svgButtons" />
+      </button>
+      <button
+        type="button"
+        class="btn btn-success mb-2 rounded-pill"
+        data-bs-toggle="modal"
+        data-bs-target="#miModal"
+      >
+        Descarga Excel
+        <img src="{% static 'svg/excel.svg' %}" class="svgButtons" />
+      </button>
     </div>
+  </div>
+
+  <div class="row mt-4">
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th class="header-cell">Column 1</th>
+          <th class="header-cell">Column 2</th>
+          <th class="header-cell">Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1 Data 1</td>
+          <td>Row 1 Data 2</td>
+          <td>
+            <button class="bg-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+            <button class="bg-warning">
+              <i class="bi bi-arrow-clockwise"></i>
+            </button>
+            <button class="bg-black">
+              <i class="bi bi-eye"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 

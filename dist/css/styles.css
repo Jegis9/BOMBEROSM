@@ -1,3 +1,6 @@
+button {
+  border-radius: 8px;
+}
 .svgButtons {
   width: 1.2rem;
   height: 1.2rem;
@@ -17,6 +20,85 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cardsEstadistics {
-  background-color: red !important;
+#card1 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(4, 205, 143, 1) 100%
+  );
+  border-bottom: 0.4rem solid green;
+}
+
+#card2 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(102, 141, 226, 1) 100%
+  );
+  border-bottom: 0.4rem solid rgb(11, 11, 161);
+}
+
+#card3 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(223, 126, 169, 1) 100%
+  );
+  border-bottom: 0.4rem solid rgb(245, 74, 103);
+}
+
+#card4 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(223, 162, 92, 1) 100%
+  );
+  border-bottom: 0.4rem solid rgb(204, 145, 17);
+}
+
+#card5 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(79, 70, 229, 1) 100%
+  );
+}
+
+#card6 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(220, 38, 38, 1) 100%
+  );
+}
+
+.cardsEstadistics,
+.card {
+  width: 18rem;
+}
+
+.card1 {
+  background-color: green;
+}
+
+.card2 {
+  background-color: rgb(11, 11, 161);
+}
+.card3 {
+  background-color: rgb(245, 74, 103);
+}
+.card4 {
+  background-color: rgb(204, 145, 17);
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  border-radius: 8px;
 }
